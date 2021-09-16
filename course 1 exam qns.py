@@ -55,7 +55,24 @@ output = " ".join(final)
 print(output)
 
 
+import numpy as np
+mat =np.zeros((5,5))
+
+for i in range(5):
+    mat[i][i]=1
+    
+for i in range(5):
+    for j in range(5):
+        if i==j:
+            mat[i][j]=3
 
 
 
+for i in range(5):
+    mat[i][4-i]=-100
 
+
+for i in range(5):
+    for j in range(5):
+        if j==4-i:
+            mat[i][j]=300000
